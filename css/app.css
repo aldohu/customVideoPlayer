@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #666;
+	max-height: 100vh;
+	font-family: 'Questrial', sans-serif;
+}
+h1 {
+	margin: 1rem;
+	color: #fff;
+}
+.player {
+	background: #333;
+	border-radius: 0.3rem;
+}
+.screen {
+	height: 70vh;
+	width: 60vw;
+}
+.control-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid red;
+}
+.play {
+	margin: 3px;
+	color: green;
+	margin-right: 1rem;
+}
+.stop {
+	margin: 3px;
+
+	margin-right: 1rem;
+	color: red;
+}
+.bar {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid blue;
+	width: 100%;
+}
+.play-bar {
+	width: 100%;
+	border: 2px solid green;
+}
+.play-bar input {
+	width: 100%;
+}
+.volume {
+	color: white;
+	margin-right: 1rem;
+}
+.volume .volume-slider {
+	display: none;
+}
+
+.volume:hover .volume-icon {
+	display: none;
+}
+
+.volume:hover .volume-slider {
+	display: block;
+}
+
+.volume .volume-slider {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.volume:hover .volume-icon {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.volume:hover .volume-slider {
+	display: block;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+.play i,
+.stop i,
+.volume-icon {
+	font-size: 1.5rem;
+}
+
+.control-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.play-bar {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid yellow;
+	width: 100%;
+	align-items: center;
+	justify-content: stretch;
+}
+
+.volume {
+	display: flex;
+	align-items: center;
+}
+
+.volume .volume-slider {
+	margin-left: 0.5rem;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.volume:hover .volume-icon {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.volume:hover .volume-slider {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+.timer {
+	color: white;
+	margin-top: 5px;
+}
